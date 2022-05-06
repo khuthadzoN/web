@@ -92,13 +92,13 @@
             <div class="all-projects">
                 <div class="project-item">
                     <div class="project-info">
-                        <h1>Project 1</h1>
-                        <h2>LLORA GROUP</h2>
+                        <h1>LLORA GROUP</h1>
+                       
                         <p>
                             A wordpress website for a Website and App Development Company
                         </p>
 
-                        <center>  <a href="https://www.lloragroup.co.za/" type="button" class="cta">Project 1</a></center>
+                        <center>  <a href="https://www.lloragroup.co.za/" type="button" class="cta">View Project</a></center>
 
                     </div>
 
@@ -109,65 +109,47 @@
                     </div>
 
                 </div>
-            </div>
+            <!--
 
-        </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="modal">
+                              <div class="video-container">
+                            <h1>Final Year Project</h1>
+                            <h2>REFUGEES MANAGEMANT SYSTEM</h2>
 
 
+
+
+
+
+                            <div class="video-container">
+                                <span class="close">&#10006;</span>
+                                <video src="VID-20201103-WA0021.mp4"></video>
+
+                            </div>
+
+
+                        </div>
+
+                        <p>
+                            Refugees management system is a computer software planed to help Home Affairs departments to work faster
+                        </p>
+                        <center>  <a href="#" type="button" class="cta">Project 3</a></center>
+                    </div>
+                    <div class="project-img">
+
+
+                        <img src="images/images (16).jpeg" />
+                        <center>  <a href="#" type="button" class="cta">Project 3</a></center>
+
+                    </div>
+                </div>
+               
+                    </div>
+                </div>
         
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 3</h1>
-                        <h2>Coding is Love</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                            rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                            harum? Ipsum repellat animi, fugit architecto voluptatum odit et!
-                        </p>
-                        <center>  <a href="https://www.lloragroup.co.za/" type="button" class="cta">Project 3</a></center>
-                    </div>
-                    <div class="project-img">
-
-                        <img src="images/images (16).jpeg" alt="img"/>
-
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 4</h1>
-                        <h2>Coding is Love</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                            rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                            harum? Ipsum repellat animi, fugit architecto voluptatum odit et!
-                        </p>
-                        <center>  <a href="https://www.lloragroup.co.za/" type="button" class="cta">Project 4</a></center>
-                    </div>
-                    <div class="project-img">
-
-                        <img src="images/images (14).jpeg" alt="img"/>
-
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Project 5</h1>
-                        <h2>Coding is Love</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                            rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                            harum? Ipsum repellat animi, fugit architecto voluptatum odit et!
-                        </p>
-                        <center>  <a href="https://www.lloragroup.co.za/" type="button" class="cta">Project 5</a></center>
-                    </div>
-                    <div class="project-img">
-
-                       <img src="images/images (15).jpeg" alt="img"/>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+ -->
                         -->
     </section>
 
@@ -263,7 +245,28 @@
         </div>
     </section>
     <!-- End Footer -->
-    <script src="./app.js"></script>
+    <script>
+
+        const button = document.querySelector('.button');
+
+        const videoContainer = document.querySelector('.video-container');
+        const close = document.querySelector('.close');
+
+        button.addEventListener('click', () => {
+
+            videoContainer.classList.add('show');
+        })
+
+        close.addEventListener('click', () => {
+
+            videoContainer.classList.remove('show');
+        })
+
+
+
+
+
+    </script>
 </body>
 
 </html>
